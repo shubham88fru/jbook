@@ -22,13 +22,12 @@ const App = () => {
   const onClick = async () => {
     if (!ref.current) return;
     const result = await ref.current.build({
-      entryPoints: ["inde.js"],
+      entryPoints: ["index.js"],
       bundle: true,
       write: false,
       plugins: [unpkgPathPlugin()],
     });
 
-    console.log(result);
     setCode(result.outputFiles[0].text);
   };
 
