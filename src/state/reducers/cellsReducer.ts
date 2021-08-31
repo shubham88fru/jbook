@@ -24,7 +24,7 @@ const reducer = produce((state: CellsState = initalState, action: Action) => {
     case ActionType.UPDATE_CELL:
       const { id, content } = action.payload;
       state.data[id].content = content;
-      break;
+      return state;
     case ActionType.DELETE_CELL:
       delete state.data[action.payload];
       state.order = state.order.filter((id) => id !== action.payload);
@@ -34,7 +34,7 @@ const reducer = produce((state: CellsState = initalState, action: Action) => {
       const index = state.order.findIndex((id) => id === action.payload.id);
       const targetIndex = direction === "up" ? index - 1 : index + 1;
       if (targetIndex < 0 || targetIndex > state.order.length - 1) {
-        return;
+        return state;
       }
       state.order[index] = state.order[targetIndex];
       state.order[targetIndex] = action.payload.id;
