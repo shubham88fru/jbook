@@ -35,8 +35,8 @@ export const useCumulativeCode = (cellId: string) => {
       if (c.id === cellId) break;
     }
 
-    return cumulativeCode.join("\n");
+    return cumulativeCode;
   });
 
-  return cummCode;
+  return cummCode.join("\n");
 };
