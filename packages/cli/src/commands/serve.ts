@@ -1,6 +1,6 @@
 import path from "path";
 import { Command } from "commander";
-import { serve } from "@webnotes/local-api";
+import { serve } from "@onlinewebnotes/local-api";
 
 const isProduction = process.env.NODE_ENV === "production";
 

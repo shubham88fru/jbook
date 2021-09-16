@@ -22,7 +22,7 @@ export const serve = (
     );
   } else {
     const packagePath = require.resolve(
-      "@webnotes/local-client/build/index.html"
+      "@onlinewebnotes/local-client/build/index.html"
     );
     app.use(express.static(path.dirname(packagePath)));
   }

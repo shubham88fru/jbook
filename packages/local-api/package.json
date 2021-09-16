@@ -1,5 +1,5 @@
 {
-  "name": "@webnotes/local-api",
+  "name": "@onlinewebnotes/local-api",
   "version": "1.0.1",
   "description": "",
   "main": "dist/index.js",
@@ -23,10 +23,10 @@
     "typescript": "^4.4.2"
   },
   "dependencies": {
-    "@webnotes/local-client": "^1.0.1",
+    "@onlinewebnotes/local-client": "^1.0.1",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "http-proxy-middleware": "^2.0.1"
   },
-  "gitHead": "3c67c2c4da9204fb875149fa9ec729a1361d859c"
+  "gitHead": "78911f01d0479a7d630d3170c896b70e8a7abe97"
 }

@@ -1,5 +1,5 @@
 {
-  "name": "@webnotes/local-client",
+  "name": "@onlinewebnotes/local-client",
   "version": "1.0.1",
   "publishConfig": {
     "access": "public"
@@ -65,5 +65,5 @@
       "last 1 safari version"
     ]
   },
-  "gitHead": "3c67c2c4da9204fb875149fa9ec729a1361d859c"
+  "gitHead": "78911f01d0479a7d630d3170c896b70e8a7abe97"
 }
